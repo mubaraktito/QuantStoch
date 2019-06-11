@@ -90,7 +90,7 @@ int start()
       double price = 0;
       double tp = 0, sl = 0;
       //buy
-      if (iCustom(Symbol(),0,"Quantum",qde,0,1) > 0 && (trade_side == -1 || trade_side == OP_BUY)) 
+      if (iCustom(Symbol(),0,"QuantumStoch",qde,0,1) > 0 && (trade_side == -1 || trade_side == OP_BUY)) 
       {
          trade_side = OP_BUY;
          trade = true;
@@ -102,7 +102,7 @@ int start()
       }
       else
       //sell
-      if (iCustom(Symbol(),0,"Quantum",qde,1,1) > 0 && (trade_side == -1 || trade_side == OP_SELL)) 
+      if (iCustom(Symbol(),0,"QuantumStoch",qde,1,1) > 0 && (trade_side == -1 || trade_side == OP_SELL)) 
       {
          trade_side = OP_SELL;
          trade = true;
